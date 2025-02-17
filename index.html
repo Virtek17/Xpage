@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Xpage/style.css" />
 
     <link
       rel="stylesheet"
@@ -12,9 +11,10 @@
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- <script type="module" src="/src/main.js"></script> -->
     <title>Vite App</title>
     <script type="module" crossorigin src="/assets/index-CSpEEOXt.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CPwQNcfJ.css" />
+    <link rel="stylesheet" crossorigin href="/assets/index-CPwQNcfJ.css">
   </head>
   <body>
     <div class="wrapper">
@@ -261,10 +261,7 @@
           </h2>
           <div class="download-links">
             <a href="#">
-              <img
-                src="/assets/appStore-CrsAogCa.svg"
-                alt="Скачать в App Store"
-              />
+              <img src="/assets/appStore-CrsAogCa.svg" alt="Скачать в App Store" />
             </a>
             <a href="#">
               <img
@@ -275,10 +272,7 @@
           </div>
           <div class="QR-banner">
             <div class="QR-banner__content">
-              <img
-                src="data:image/png;base64,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"
-                alt="QR-код для скачивания"
-              />
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAnVSURBVHgB7d3vddtGFgXwxz36HpUwrmDdQegKog6CrWCtChapYOkKgnQgVRC6A7sCIxVEqUCZieYj3x3zAcM/l/d3jg4/TACC0JUP+DIzb5NS+tXMBrt+4zzPvxwayJ9xyC+/Osflw+Z3FpDP+628OMNDPu9vznH/yy+jc9yUj/uPnRBTBv5lIkQUaKGiQAsVBVqoKNBCRYEWKneN8Zf8s7PLMdr6Ui2/RQybzWY+NPD6+voXOO5TPm5yjvsArqeUGD84Y4Y+R36/7bdv3/6w411VBpqB9mq755B/YaP1kSyghDkSknxPS0heDo3lzxi+ngXHIVeVAT1yCBUFWqgo0EJFgRYqCrRQaVU5XPnb5ja//Gzre6xVgFMp7/URjE/eQC6x7fJ98K71t/w59ocG8jEP+eUn57jZwMy3OjPOM3gDjTJiyCVmIBxoeysRDbayXAobzSlpdfLiTfMs8i9t8g+1BzC2B2P/Nv/eTWAabDLwB3bqaad2gRnQI4dQUaCFigItVBRooaJAC5UlVY5r8sX8WVpLKio7cPxXW195r9EbrItvPZ9OXA49i5sIdP5FlkB/sZXl8tIuOCUzpAbSnfmWA/3qjdXpqvSB1iOHUFGghYoCLVQUaKGiQAuVm6hy1Ek9W4uZvIG6oNVWPu/eJOxW6tBb8zdrhHKpbOONNTZrRMYzzIy7CXrkECoKtFBRoIWKAi1UFGihsqTK8ae9Lei8Bq1rTe5AvC7nbvfVOO/LFc2Ku7gMhAOdb/pzfnm2K4CutQYLbdYY3cjxY6PHinfeKf9cRUnvEjOgRw6hokALFQVaqCjQQkWBFiqtKsd97cIqt+uqMtAMtAVnqV2S72iNjGbUoYWnyVskWzZVBPvijd57lmsF7xlu47zAVWVAjxxCRYEWKgq0UFGghYoCLVQUaKFSynaPtQXAVWv0EHnKn/F3CyilOW+ssa+de1/ztQ6gjfEevSfS41qvScnAxuTk6vTR0RmetCI8To8cQkWBFioKtFBRoIWKAi1UNnUm2o/O+HP+xv1kR8rnLDO0/m8EohWHxn2dzV8tnSy2Xx681nw95fdx7wy7bZyRRmvksnr9ERzbYwbfc6lDl5s+OP/BnH+ODrS93bjBOERLaOi+jmBFeDlmtBh0raWNc3LG9haTDGfn0T+0Sz5mPXIIFQVaqCjQQkWBFioKtFBpLZLdLughMgbHkFJxiXSEfW9v3/KP1qndMLqv7+2C1NKcV35E13rfuHdRKAOfm4G2WLMduDo5f9DRYp68chdSS2GhQBv441vQbnhr8SZGp1bCPNrx7i3+DxcCM6BHDqGiQAsVBVqoKNBCRYEWKqXK8RmMvze/NDObP6mlV4+QUu7y1kF+yd9+IyW9lskbaCzMPbnGpop7fKh7LCrNzeC8pcqBKkuTxaBr/XKXQzB5J691RO8D7c+wmHMwMIPNYjVq6MoWrLpTMlsbS1qsxOZmoPaucQO9YFouutZRjxxCRYEWKgq0UFGghYoCLVTu6oJWb/HkPTj2Pi2YigfMFgSu5we7LKhtMvp99FKuZXbGulzPguzAayl16LIaeLDjPVh8Bpsrl5e2jY0FD2q0G740u1y2+uXQQKMfTBd1dfajcz1oH74luvyu9MghVBRooaJACxUFWqgo0EJFgRYqrUWyyLRgxtSrBdSZVoMzDNsNW7AUFr3WqMbsx2Sg3IVaPCPR+4qUVdL5ZfWWJ41r1b/QwkWBFioKtFBRoIWKAi1UFGih0irb7Tabze7QwJIVz6iFbz7vBKYWjsF2w+Hpj9E2xUiv1eLg87eg+/oXeL8y29LrpVMqdx8sIJ+3tLFOzjC81lagXyJTOVvQOWuY07HH1r8B97ioHp+/o2RBwc95bx3uuTUaJ6Fr1SOHUFGghYoCLVQUaKGiQAuVVpXjodPKbmQEYyn5LXXRpoJ78zcHLN/UdxbQaDcctY+03agGMFY+o3etQ+2lckioPba97QoQXeyL7im81lag0e6jXZQaY2NTwcGON4NWxMmCgTbcbniJUKDRH0Lta+MFZWvgtHZZ7bG3YEytkYWLAi1UFGihokALFQVaqLSqHHvze2igdsNl8z9UORi9gdfX14/5G7m3keEMjt3aZXVnjbZx/grGyn0ZvcGEWxGjUhi81sZ5R/Pf76PFlOx4GSiZcytvzUA3NhV0A+0dV48dzYduwgDKb+Vla5cj1MYZqX3F0X2NrlB/AvcVbdY4NXqshAJdpiyD0m0yEGg9cggVBVqoKNBCRYEWKgq0UFmyt90SExgrlRN3Eg1ojYzOOye/ne6S2XJP4HjUwvfSoPuKJqe1PuMExgZvIJduyyxPb3HuDM779SyBRps81qmB7jRHw5sKeiWkcszqfUtqbxJz3jPabvgcBovNjNuaXyotMxzfeQc2/hDQ/8MYUElYjxxCRYEWKgq0UFGghYoCLVRKlQO1xX0Bx/4JjpstbraYF+tgwSLhaDkQtU1uSWBstvWdo40zdIfa4iL5uOf88mwri27w19Gp2y0/9ehdE2053Xi/wU7cxrlFjxxCRYEWKgq0UFGghYoCLVQUaKFyt2C/uEszollYAJwVhtSeJskZHtZeJNvLd7RGjtxXaEkb5/wzOcOj/oUWKgq0UFGghYoCLVQUaKGiQAuVZidZi7dr6GG09aUUbyk8bDab+dBAo6Xwfy2+kWEPj5HWyL00WiPD6arNQPeoQUY1NnlcdGoLKGG+sJbCIXUTyC7zyYOSBe+PHjmEigItVBRooaJACxUFWqiE97are9D9bOt7rN+6L8XgDeSS1hhcFD6D826tw+zHfK070LsmKlkfpaQZWU2+aLPGZB1ufK2HXkygv6PdcLLjjaCnSZlWOdj6HuxK1B0FQvTIIVQUaKGiQAsVBVqoKNBC5Vw9Vq5Gp3bDn62P0WJQu+G9+e2xkXClqs5GjJTtPivQbaPFrN4auSU6M7LRbnh/hhmXpQ6d7Hha9S1cFGihokALFQVaqCjQQuVWqhxlEexkMYOtLBcVSkXBqyr8aPHzDhYzG2g3bP77JfM7yS4R7ttyE4HOZadS9w3VflOfft0/WZ8V7NF+J0OwNLc19VgR6UeBFioKtFBRoIWKAi1UllQ5UGvkWzGDsZfG2OyMtdoNz7Y+91pzlQddzw+GzWAsWQfhQPdqjXxNou2G8737lF8+HRprtBsO94NZoEzlHO148FpRG+cl9MghVBRooaJACxUFWqgo0EKlVeW47zQ5R6SLzS20Rm6UwqAlLXztxO2GF5TCVm/jXKeWur1ret1XPXIIFQVaqCjQQkWBFioKtFBRoIVKqUO7bXGvSaOF71P+jL/baZ283XB+v2QBPa7nn6l2794lWx+8r38D7y1U9FYzSZkAAAAASUVORK5CYII=" alt="QR-код для скачивания" />
               <p class="platform">iOS / Android</p>
               <p>
                 наведи камеру<br />устройства на QR-<br />код, чтобы скачать
